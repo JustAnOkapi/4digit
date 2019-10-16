@@ -1,2 +1,2 @@
 [MESSAGES CONTROL]
-disable=inconsistent-return-statements
+disable=inconsistent-return-statements,missing-module-docstring,invalid-name,invalid-name,missing-function-docstring,bad-whitespace,line-too-long
