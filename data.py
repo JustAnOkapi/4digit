@@ -24,8 +24,13 @@ guess_split = [str(guess)[0], str(guess)[1], str(guess)[2], str(guess)[3]] # tur
 
 pos1 = [] # possible numbers after first guess
 for current in all_raw:
-    if 1==1:
-        if 1==1: # temp
-            pos1.append(current)
+    current_split = [str(current)[0], str(current)[1], str(current)[2], str(current)[3]]
+    guess_temp = guess_split
+    for digit in enumerate(guess_split):
+        if guess_split[digit] == current_split[digit]:
+            guess_temp.remove(guess_temp[digit])
+
+
+
 
 # https://en.wikipedia.org/wiki/Bulls_and_Cows
