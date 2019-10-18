@@ -20,16 +20,15 @@ BC1r = input(f"{guess}>>>") # ask the result and store it raw
 BC1rt = BC1r.split(",") # format the raw into a temp list
 BC1 = (BC1rt[0],BC1rt[1]) # format the temp into a perm tuple
 
-guess_split = [str(guess)[0], str(guess)[1], str(guess)[2], str(guess)[3]] # turn int into a list of spilits
+guess_split = [str(guess)[0], str(guess)[1], str(guess)[2], str(guess)[3]] # turn int into a list of splits
 
 pos1 = [] # possible numbers after first guess
-for current in all_raw:
-    current_split = [str(current)[0], str(current)[1], str(current)[2], str(current)[3]]
-    guess_temp = guess_split
-    for digit in enumerate(guess_split):
-        if guess_split[digit] == current_split[digit]:
-            guess_temp.remove(guess_temp[digit])
-
+for current in all_raw: # for each posible number
+    current_split = [str(current)[0], str(current)[1], str(current)[2], str(current)[3]] # turn int into a list of splits
+    guess_temp = guess_split # non distructivly cross numbers out
+    for digit in enumerate(guess_split): # for all 4 digits in guess
+        if guess_split[digit] == current_split[digit]: # if the digit is the same(Bull)
+            guess_temp[digit] = 0 # wrong...
 
 
 
