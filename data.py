@@ -31,5 +31,5 @@ for current in all_raw: # for each posible number
             guess_temp[digit] = 0 # wrong...
 
 
-
+# http://slovesnov.users.sourceforge.net/index.php?bullscows_tree,,avgBullsCows
 # https://en.wikipedia.org/wiki/Bulls_and_Cows
